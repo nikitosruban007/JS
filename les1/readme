@@ -1,0 +1,1 @@
+Для запуску ввести npx json-server --watch db.json
