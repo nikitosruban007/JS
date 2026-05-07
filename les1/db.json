@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Олександр",
+      "email": "alex@test.com"
+    },
+    {
+      "id": "2",
+      "name": "Микита",
+      "email": "mykyta@test.com"
+    },
+    {
+      "login": "abcde23",
+      "email": "nikitosruban007@gmail.com",
+      "password": "qwerty123",
+      "id": "r3zY8k7"
+    }
+  ]
+}

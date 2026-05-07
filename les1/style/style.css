@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('../fonts/e-Ukraine-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: e-Ukraine, sans-serif;
+    font-weight: 400;
+    --transition: ease 0.2s;
+}
+
+
+body {
+    background: #bab8a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: min(92%, 50rem);
+    max-width: 600px;
+    background: #bebdab;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0.0625rem solid #a8a594;
+}
+
+header {
+    text-align: center;
+    h1 {
+        font-weight: 500;
+    }
+    margin-bottom: 2rem;
+}
+
+button,
+input {
+    width: 100%;
+    max-width: 100%;
+}
+
+input {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: var(--transition);
+}
+
+input:focus {
+    outline: none;
+    background-color: #ececec;
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background: #fa8c05;
+    border: none;
+    transition: var(--transition);
+}
+
+button:hover {
+    background: #e88205;
+}
+
+label {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 0.35rem;
+}
+
+main, form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+}
+
+form {
+    padding: 1rem;
+    background: #cccbb8;
+    border-radius: 0.5rem;
+}
+
+.error {
+    background: #cccbb8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0.5rem 0.5rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+    h3 {
+        color: #ac0000;
+        font-weight: bold;
+    }
+}
